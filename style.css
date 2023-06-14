@@ -52,11 +52,11 @@ body::after {
 }
 
 .t_1 {
-    font-size: 129.5px;
+    font-size: 114px;
     line-height: 1.5;
     /* max-width: 700px; */
     margin-bottom: 10px;
-    margin-left: 270px;
+    margin-left: 300px;
     text-align: left; /* center the heading horizontally */
     
     /* margin-left: auto; add auto margin to center horizontally */

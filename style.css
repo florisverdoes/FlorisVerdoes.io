@@ -9,6 +9,25 @@ body {
     
 }
 
+h1 {
+    position: relative; /* Create a new stacking context */
+    z-index: 1; /* Ensure the title is above the overlay */
+    mix-blend-mode: difference; /* Apply color inversion using the difference blend mode */
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Set an overlay color with some transparency */
+    pointer-events: none; /* Ensure the overlay doesn't interfere with interaction */
+    z-index: -1; /* Send the overlay to the bottom of the stacking order */
+}
+
+
 /* CSS styles for image */
 .image img {
     width: 300px; /* adjust the width as per your requirement */

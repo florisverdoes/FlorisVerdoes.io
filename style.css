@@ -6,7 +6,9 @@ body {
     background-size: cover;
     background-position: 0px -125px; /* Adjust the pixel values as per your desired position */
     background-repeat: no-repeat;
-    
+
+    font-family: "Avenir", sans-serif;
+
 }
 
 h1 {
@@ -67,6 +69,7 @@ body::after {
 .container {
     display: flex;
     flex-direction: row; /* set flex-direction to row */
+    flex-wrap: wrap;
     align-items: center; /* center items vertically */
     justify-content: center; /* center items horizontally */
     
@@ -105,5 +108,22 @@ body::after {
     text-align: center;
   }
 
-
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .t_1 {
+        font-size: 78px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+      .image img {
+        width: 500px; /* adjust the width as per your requirement */
+        height: auto; /* maintain aspect ratio */
+        border: 1px solid black; /* add a border around the image */
+        border-radius: 5px; /* round the corners of the image */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* add a subtle shadow effect */
+        margin-right: 20px; /* add space to the right of the image */
+    }
+}
   

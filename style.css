@@ -93,10 +93,17 @@ body::after {
     display: flex; /* make the links flex container */
     align-items: center; /* center items vertically */
     font-family: "Avenir", sans-serif; /* set the font to Avenir */
+    flex-direction: wrap;
+    justify-content: center;
 }
 
 .links a {
     text-decoration: none; /* remove underline from links */
     color: goldenrod; /* inherit text color from parent */
     margin-right: 1px; /* add right margin for spacing */
-}
+    flex-basis: 500px;
+    text-align: center;
+  }
+
+
+  

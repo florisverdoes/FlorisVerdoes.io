@@ -7,7 +7,7 @@ body {
     background-position: 0px -125px; /* Adjust the pixel values as per your desired position */
     background-repeat: no-repeat;
 
-    font-family: "Avenir", sans-serif;
+    font-family: "Lato", sans-serif;
 
 }
 
@@ -49,21 +49,19 @@ body::after {
     line-height: 1.5;
     max-width: 500px;
     margin-bottom: 10px;
-    font-family: "Avenir", sans-serif; /* set the font to Avenir */
     text-align: justify; /* justify the paragraph text */
 }
 
 .t_1 {
-    font-size: 126px;
+    font-size: 130px;
     line-height: 1.5;
     /* max-width: 700px; */
-    margin-bottom: 10px;
-    margin-left: 325px;
+    margin-bottom: 5px;
+    margin-left: 410px;
     text-align: left; /* center the heading horizontally */
     
     /* margin-left: auto; add auto margin to center horizontally */
     /* margin-right: auto; add auto margin to center horizontally */
-    font-family: "Avenir", sans-serif; /* set the font to Avenir */
 }
 
 .container {
@@ -82,7 +80,7 @@ body::after {
 .text {
     flex: 0 0 auto;
     padding-left: 20px; /* add padding to the left for separation */
-    border-left: 1px solid black; /* add a vertical line as a divider */
+    border-left: 1px solid #dddee0; /* add a vertical line as a divider */
 }
 
 .text-container {
@@ -95,7 +93,6 @@ body::after {
 .links {
     display: flex; /* make the links flex container */
     align-items: center; /* center items vertically */
-    font-family: "Avenir", sans-serif; /* set the font to Avenir */
     flex-direction: wrap;
     justify-content: center;
 }
@@ -108,23 +105,39 @@ body::after {
     text-align: center;
   }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .container {
         flex-direction: column;
     }
-    .t_1 {
-        font-size: 78px;
-        line-height: 1.5;
-        margin-bottom: 10px;
-        text-align: center; /* center the heading horizontally */
-      }
-      .image img {
-        width: 500px; /* adjust the width as per your requirement */
-        height: auto; /* maintain aspect ratio */
-        border: 1px solid black; /* add a border around the image */
-        border-radius: 5px; /* round the corners of the image */
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* add a subtle shadow effect */
-        margin-right: 20px; /* add space to the right of the image */
-    }
-}
+   
   
+
+/* Media query for smaller screens */
+@media screen and (max-width: 900px) {
+    .t_1 {
+      font-size: 76px;
+      text-align: center; /* Center alignment for smaller screens */
+      margin-left: auto; /* Remove the specific margin for smaller screens */
+      margin-right: auto; /* Center horizontally */
+    }
+    /* Remaining styles for smaller screens */
+    .image img {
+      width: 500px;
+      height: auto;
+      border: 1px solid black;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      margin-right: 0px;
+    }
+  }
+
+  .text {
+    flex: 0 0 auto;
+    padding-left: 0px; /* add padding to the left for separation */
+    border-left: 0px solid #dddee0; /* add a vertical line as a divider */
+    padding-top: 20px; /* add padding to the left for separation */
+    border-top: 1px solid #dddee0; /* add a vertical line as a divider */
+    border-bottom: 1px solid #dddee0; /* add a vertical line as a divider */
+}
+
+}

@@ -115,7 +115,7 @@ body::after {
 /* Media query for smaller screens */
 @media screen and (max-width: 900px) {
     .t_1 {
-      font-size: 76px;
+      font-size: 80px;
       text-align: center; /* Center alignment for smaller screens */
       margin-left: auto; /* Remove the specific margin for smaller screens */
       margin-right: auto; /* Center horizontally */

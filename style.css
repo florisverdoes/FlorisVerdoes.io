@@ -116,6 +116,7 @@ body::after {
         font-size: 78px;
         line-height: 1.5;
         margin-bottom: 10px;
+        text-align: center; /* center the heading horizontally */
       }
       .image img {
         width: 500px; /* adjust the width as per your requirement */
